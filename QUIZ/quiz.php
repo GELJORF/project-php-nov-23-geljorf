@@ -152,5 +152,9 @@ if (isset($_POST['submit'])) {
 
     ?>
 
+<div class="fixed bottom-4 right-4 p-2 bg-blue-500 rounded-lg shadow-md">
+    <a href="../lessonOnLine/lessonOnLine.php" class="text-white hover:bg-blue-600 hover:text-white py-1 px-3 rounded-md transition-all duration-300">Retour</a>
+</div>
+
 </body>
 </html>
