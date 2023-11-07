@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-# project-php-nov-23-geljorf
-=======
 # Site Web d'Enseignement de l'Arabe (PHP)
 
 ## Structure du Site
@@ -48,4 +45,3 @@ Contenu : Formulaire d'inscription et traitement des données d'utilisateur.
 Description : Page de connexion pour les utilisateurs existants.
 Fichier PHP : login.php
 Contenu : Formulaire de connexion et vérification des informations d'identification.
->>>>>>> master
