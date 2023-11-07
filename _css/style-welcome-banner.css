@@ -1,0 +1,22 @@
+.welcome-banner {
+  position: fixed;
+  top: 50%; /* Ancre la bannière à 50% de la hauteur de la fenêtre */
+  left: 0;
+  right: 0;
+  transform: translateY(-50%); /* Corrige la position pour la centrer verticalement */
+  background: #3498db; /* Couleur de fond bleu */
+  color: #fff;
+  padding: 20px; /* Augmenter la marge intérieure pour plus d'espace */
+  text-align: center;
+  border-top: 5px solid #11639a; /* Ajouter une bordure bleue en haut */
+}
+
+.welcome-banner button {
+  background: #fff;
+  color: #3498db; /* Utilisez la couleur bleue pour le bouton */
+  border: none;
+  padding: 10px 20px; /* Augmenter la taille du bouton */
+  margin-top: 50px; /* Augmenter l'espacement entre le texte et le bouton */
+  margin-bottom: 30px;
+  cursor: pointer;
+}
