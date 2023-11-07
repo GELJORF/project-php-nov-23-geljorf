@@ -16,7 +16,7 @@
         <nav class="mb-6">
             <ul class="flex space-x-4">
                 <li><a href="../index.php" class="text-blue-600">Accueil</a></li>
-                <li><a href="../lessonOnLine.php" class="text-blue-600">Cours</a></li>
+                <li><a href="../lessonOnLine/lessonOnLine.php" class="text-blue-600">Cours</a></li>
                 <li><a href="../inscription/inscription.php" class="text-blue-600">Inscription</a></li>
                 <li><a href="../connexion/connexion.php" class="text-blue-600">Connexion</a></li>
             </ul>
