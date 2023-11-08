@@ -40,13 +40,18 @@ require_once 'components/head.php';
             <p class="font-bold text-white">
                 Que vous soyez débutant ou que vous souhaitiez perfectionner vos compétences en arabe, nous sommes là pour vous accompagner. Explorez nos cours, nos ressources et notre communauté d'apprenants passionnés.
             </p>
+
+            <h2 class="text-2xl font-bold text-blue-600 mb-4">SITE EN ÉVOLUTION</H2>
+            <p class="font-bold text-white">
+                Le site est en phase de développement continu pour offrir une expérience améliorée aux utilisateurs</p>
+            <p class="font-bold text-white">Nouveau contenu ajouté régulièrement</p>
         </main>
     </div>
 
     <footer class="text-gray-700 py-4 text-center">
         <?php
         require_once 'components/footer.php';
-        ?>
+?>
     </footer>
 </body>
 </html>
