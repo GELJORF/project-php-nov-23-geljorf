@@ -6,15 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>
     <?php
-    // 1 - Version avec if
-    // if (isset($title)) {
-    //     echo $title;
-    // } else {
-    //     echo "Arabe langue étrangère";
-    // }
-    // 2 - Version ternaire
-    // echo isset($title) ? $title : "Arabe langue étrangère";
-    // 3 - Opérateur null coalescent "??"
+    
     echo $title ?? "Arabe langue étrangère";
     ?>
   </title>
