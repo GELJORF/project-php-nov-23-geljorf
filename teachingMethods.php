@@ -26,8 +26,9 @@
     $contentShouldHaveWhiteBackground = true;
     ?>
 
-<div <?php if ($contentShouldHaveWhiteBackground) 
-{ echo 'style="background-color: rgba(200, 200, 200, 0.5);" class="mt-8 mb-8 px-4 py-4"'; } ?>>
+<div <?php if ($contentShouldHaveWhiteBackground) {
+    echo 'style="background-color: rgba(200, 200, 200, 0.5);" class="mt-8 mb-8 px-4 py-4"';
+} ?>>
     <div class="max-w-3xl mx-auto mt-8 mb-8 text-black">
     <h1 class="text-4xl font-bold text-blue-600 mb-6">Méthodologie immersive</h1>
 
@@ -67,6 +68,13 @@
     </p>
 </div>
 
+<div style="background-color: #87CEEB; margin: 0 auto; max-width: 400px; padding: 20px; text-align: center;">
+    <h2 class="text-2xl font-semibold" style="margin-bottom: 10px;">Inscrivez-vous à notre lettre d'information !</h2>
+    <form action="#" method="post">
+        <input type="email" name="email" placeholder="Votre courriel" style="margin-right: 10px; padding: 10px;" required>
+        <input type="submit" value="S'inscrire" style="background-color: #1E90FF; color: #fff; padding: 10px; border: none; border-radius: 5px;">
+    </form>
+</div>
     <?php
     require_once 'components/footer.php';
     ?>

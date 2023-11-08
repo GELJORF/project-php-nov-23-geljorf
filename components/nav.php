@@ -57,4 +57,3 @@ require_once __DIR__ . "/../navbarTreatment.php";
     <a href="../inscription/inscription.php">Inscription</a>
   </div>
 </div>
-
