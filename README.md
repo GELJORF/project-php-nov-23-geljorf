@@ -34,6 +34,11 @@ Description : Page de contact pour poser des questions ou donner des commentaire
 Fichier PHP : contact.php
 Contenu : Formulaire de contact pour interagir avec notre équipe.
 
+### Lettre d'information
+
+Cette page a été récemment ajoutée au site, afin de permettre aux visiteurs de s'abonner
+et de recevoir par voie électronique les nouveautés : nouveaux cours, annonces, etc.
+
 ### Inscription - inscription.php
 
 Description : Page d'inscription pour les nouveaux utilisateurs.
@@ -45,3 +50,21 @@ Contenu : Formulaire d'inscription et traitement des données d'utilisateur.
 Description : Page de connexion pour les utilisateurs existants.
 Fichier PHP : login.php
 Contenu : Formulaire de connexion et vérification des informations d'identification.
+
+## Langages utilisés dans ce site
+
+### PHP 
+
+Évidemment, le site utilise principalement le langage PHP afin d'ajouter du contenu numérique 
+à ses pages ou, en d'autres termes, afin de présenter dynamiquement son contenu, comme la page de cours
+qui contient un quiz, le tout en PHP.
+
+### Javascript
+
+Toutefois, les internautes ou les apprenants qui visitent le site pour la première fois, seront accueillis 
+par un message de bienvenue, une bannière programmée à l'aide du langage Javascript.
+
+### CSS
+
+Cette bannière de bienvenue est stylisée à l'aide d'un fichier .css ; c'est le seul endroit où CSS
+est utilisé dans ce projet. 
