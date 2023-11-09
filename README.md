@@ -89,15 +89,21 @@ contient plusieurs fichiers.
 #### functions.php
 Il s'agit d'une fonction appelée `connectToDatabse()`, elle permet une connection à la base de données MySQL à l'aide de l'extension PDO (PHP Data Objects). La fonction ne prend pas d'arguments et renvoie un objet PDO.
 La fonction définit les paramètres de connexion à la base de données :
-
-$dsn : les informations nécessaires pour se connecter à la base de données (le nom d'hôte, le nom de la base de données et le numéro de port).
-
+$dsn : les informations nécessaires pour se connecter à la base de données : le nom d'hôte, le nom de la base de données et le numéro de port.
 $username : Le nom d'utilisateur utilisé pour se connecter à la base de données.
-
 $password : Le mot de passe utilisé pour se connecter à la base de données.
-
 Si la connexion est réussie, la fonction renvoie un objet PDO si la connexion est réussie. Dans le cas contraire, la fonction renvoie une exception et quitte le script.
-Nous appelerons cette fonction afin de se connecter aux bases de données (car il y en a deux) utilisées 
+Nous appelerons cette fonction afin de se connecter aux bases de données, car il y en a deux, utilisées 
 pour ce site.
+
+#### Le contenu de la page
+
+Nous avons conçu une première architecture de cette page avec une liste des cours actuellement disponibles,
+que nous avons par la suite représentée par une boucle "foreach".
+
+
+
+
+
 
 
