@@ -82,3 +82,9 @@ est d'informer le lecteur de l'intention de l'auteur du site.
 Les pages qui recourent au langage PHP en vue de présenter un contenu dynamique sont les cinq 
 pages suivantes, à savoir "Cours", "Contact", "Lettre d'information", "Connexion" et "Inscription".
 
+### Page "Cours"
+Le dossier (répertoire) qui traite du contenu de cette page s'intitule "lessonOnLine" et
+contient plusieurs fichiers.
+#### functions.php
+
+
