@@ -86,5 +86,11 @@ pages suivantes, à savoir "Cours", "Contact", "Lettre d'information", "Connexio
 Le dossier (répertoire) qui traite du contenu de cette page s'intitule "lessonOnLine" et
 contient plusieurs fichiers.
 #### functions.php
+Il s'agit d'une fonction appelée `connectToDatabse()`, elle permet une connection à la base de données MySQL à l'aide de l'extension PDO (PHP Data Objects). La fonction ne prend pas d'arguments et renvoie un objet PDO.
+La fonction définit les paramètres de connexion à la base de données :
+$dsn : les informations nécessaires pour se connecter à la base de données (le nom d'hôte, le nom de la base de données et le numéro de port).
+$username : Le nom d'utilisateur utilisé pour se connecter à la base de données.
+$password : Le mot de passe utilisé pour se connecter à la base de données.
+
 
 
