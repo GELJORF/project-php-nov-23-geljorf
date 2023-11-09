@@ -7,7 +7,7 @@
   <title>
     <?php
     
-    echo $title ?? "Arabe langue étrangère";
+    echo $title ?? "ALE (Arabe langue étrangère)";
     ?>
   </title>
   <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
