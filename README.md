@@ -68,3 +68,15 @@ par un message de bienvenue, une bannière programmée à l'aide du langage Java
 
 Cette bannière de bienvenue est stylisée à l'aide d'un fichier .css ; c'est le seul endroit où CSS
 est utilisé dans ce projet. 
+
+## Raisonnement et progression
+
+### 
+L'élaboration du site (qui est toujours en cours de développement, rappelons-le) est le fruit
+d'un mois de travail : conception du schéma de la base de données, validation de la table et des idées
+avec le formateur, la mise en pratique de ces idées ou, en d'autres termes, l'heure de la vérité.
+###
+Les trois premières pages sont statiques, présentes en guise d'introduction au site et dont l'objectif 
+est d'informer le lecteur de l'intention de l'auteur du site.
+###
+
