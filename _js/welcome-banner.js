@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function () {
       const banner = document.createElement('div');
       banner.classList.add('welcome-banner');
       banner.innerHTML = `
-        <p>Bienvenue à notre site d'apprentissage de l'arabe !</p>
+        <p>Bienvenue à notre site d'apprentissage de la langue arabe !</p>
         <button id="close-banner">Commencer</button>
       `;
   
