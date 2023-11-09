@@ -12,44 +12,44 @@
 
 ### A propos - about.php
 
-Description : Page décrivant l'équipe derrière le site et ses valeurs.
-Fichier PHP : about.php
-Contenu : Informations sur notre équipe, notre histoire et nos engagements.
+    Description : Page décrivant l'équipe derrière le site et ses valeurs.
+    Fichier PHP : about.php
+    Contenu : Informations sur notre équipe, notre histoire et nos engagements.
 
 ### Méthodologie - teachingMethods.php
 
-Description : Page expliquant notre méthodologie d'enseignement.
-Fichier PHP : teachingMethods.php
-Contenu : Détails sur notre approche interactive, immersive, l'utilisation de ressources audiovisuelles, et notre équipe pédagogique expérimentée.
+    Description : Page expliquant notre méthodologie d'enseignement.
+    Fichier PHP : teachingMethods.php
+    Contenu : Détails sur notre approche interactive, immersive, l'utilisation de ressources audiovisuelles, et notre équipe pédagogique expérimentée.
 
 ### Cours - lessonOnLine.php
 
-Description : Page présentant les derniers cours et leur contenu.
-Dossier : lessonOnLine
-Contenu : Une liste des cours récemment ajoutés avec des descriptions détaillées.
+    Description : Page présentant les derniers cours et leur contenu.
+    Dossier : lessonOnLine
+    Contenu : Une liste des cours récemment ajoutés avec des descriptions détaillées.
 
 ### Contact - contact.php
 
-Description : Page de contact pour poser des questions ou donner des commentaires.
-Fichier PHP : contact.php
-Contenu : Formulaire de contact pour interagir avec notre équipe.
+    Description : Page de contact pour poser des questions ou donner des commentaires.
+    Fichier PHP : contact.php
+    Contenu : Formulaire de contact pour interagir avec notre équipe.
 
 ### Lettre d'information
 
-Cette page a été récemment ajoutée au site, afin de permettre aux visiteurs de s'abonner
-et de recevoir par voie électronique les nouveautés : nouveaux cours, annonces, etc.
+    Cette page a été récemment ajoutée au site, afin de permettre aux visiteurs de s'abonner
+    et de recevoir par voie électronique les nouveautés : nouveaux cours, annonces, etc.
 
 ### Inscription - inscription.php
 
-Description : Page d'inscription pour les nouveaux utilisateurs.
-Dossier : inscription
-Contenu : Formulaire d'inscription et traitement des données d'utilisateur.
+    Description : Page d'inscription pour les nouveaux utilisateurs.
+    Dossier : inscription
+    Contenu : Formulaire d'inscription et traitement des données d'utilisateur.
 
 ### Connexion - login.php
 
-Description : Page de connexion pour les utilisateurs existants.
-Fichier PHP : login.php
-Contenu : Formulaire de connexion et vérification des informations d'identification.
+    Description : Page de connexion pour les utilisateurs existants.
+    Fichier PHP : login.php
+    Contenu : Formulaire de connexion et vérification des informations d'identification.
 
 ## Langages utilisés dans ce site
 
