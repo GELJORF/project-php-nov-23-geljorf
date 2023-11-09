@@ -79,4 +79,6 @@ avec le formateur, la mise en pratique de ces idées ou, en d'autres termes, l'h
 Les trois premières pages sont statiques, présentes en guise d'introduction au site et dont l'objectif 
 est d'informer le lecteur de l'intention de l'auteur du site.
 ###
+Les pages qui recourent au langage PHP en vue de présenter un contenu dynamique sont les cinq 
+pages suivantes, à savoir "Cours", "Contact", "Lettre d'information", "Connexion" et "Inscription".
 
