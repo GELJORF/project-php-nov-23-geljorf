@@ -17,7 +17,6 @@
     <h1 class="text-2xl font-semibold mb-4 font-serif text-black-500">NOTRE QUIZ</h1>
     <form action="quiz.php" method="post" class="w-full max-w-md">
         <?php
-        // Votre code PHP existant pour les questions et le quiz
         class Question
         {
             private $question;

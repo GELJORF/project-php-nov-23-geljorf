@@ -97,7 +97,7 @@ if (isset($_POST['submit'])) {
 
 <body class="bg-gray-100 p-4">
 <h1 class="text-2xl font-semibold mb-4 font-serif text-black-500">NOTRE QUIZ</h1>
-<form action="quiz.php" method="post">
+<form action="quiz_first_version.php" method="post">
     <?php
     foreach ($questions as $questionID => $questionData) {
         echo "<div class='mb-4'>";

@@ -138,3 +138,19 @@ Le code va ensuite afficher le contenu de la leçon dans un nouvel onglet, grâc
 
 Ici, on génère un lien hypertexte `(<a>)` avec l'attribut `href` qui pointe vers la page `"lesson_content.php"` avec un paramètre "id" égal à l'ID de la leçon actuelle.
 
+##### QUIZ
+
+
+Nous avons décidé d'aller plus loin dans le code, en ajoutant à la page de leçons un "Quiz" (QCM) qui teste
+les connaissances, certes récentes et bien fraîches, avouons-le, des nouveaux apprenants en arabe.
+
+
+Clairement, c'était le code le plus difficile à écrire parmi les autres que le site propose. Il a fallu 
+le réécrire plusieurs fois, en raison de la grande dififuclté (pour nous, débutant en code) à obtenir le code qui calcule correctement les bonnes et mauvaises réponses.
+
+
+Une fois réussi, nous avons donné au fichier le nom de "first_version". Plutôt modeste, proposant simplement
+un tableau associatif et une boucle foreach afin de générer les questions, nous voulons améliorer cette version en réécrivant le code avec des classes. Donc, nous avons introduit les classes "Question" et "Quiz" en vue d'encapsuler le code qui gère les questions et le quiz. 
+
+
+Ainsi, et pour que notre code soit "orienté objet", nous avons introduit : 
