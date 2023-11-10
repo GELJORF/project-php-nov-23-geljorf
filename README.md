@@ -103,8 +103,10 @@ que nous avons par la suite représentée par une boucle "foreach". Nous incluon
 
 Le code PHP a été évolué par un script, contenu dans le fichier lesson_content.php. L'on inclut d'abord
 la fonction réutilisable functions.php, qui permet de se connecter à la base de données. 
-Nous vérifions ensuite si un paramètre "id" est présent dans l'URL grâce à la fonction grâce au code `if (isset($_GET['id']))`. Si le paramètre est trouvé, cela signifie qu'un identifiant de leçon a été spécifié.
+Nous vérifions ensuite si un paramètre "id" est présent dans l'URL grâce à la fonction grâce au code 
+`if(isset($_GET['id']))`. Si le paramètre est trouvé, cela signifie qu'un identifiant de leçon a été spécifié.
 La valeur `$lessonId` récupère la valeur de l'ID de leçon `$_GET['id']` à partir des paramètres de l'URL.
+
 
 
 
