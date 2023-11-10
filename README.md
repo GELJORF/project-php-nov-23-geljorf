@@ -109,8 +109,10 @@ La valeur `$lessonId` récupère la valeur de l'ID de leçon `$_GET['id']` à pa
 Grâce à cette ligne de code `$query = "SELECT title, content, publication_date FROM lessons_learning_arabic WHERE id = :id";` le code prépare une requête SQL pour récupérer le titre, le contenu et la date de publication d'une leçon à partir de la table "lessons_learning_arabic" en utilisant un ID.
 La ligne `$stmt = $pdo->prepare($query)` préapre la requête SQL en utilisant la connexion PDO.
 Il est temps de lier  la valeur de l'ID en tant que paramètre à la requête préparée : 
-`$stmt->bindParam(':id', $lessonId, PDO::PARAM_INT)`. Le résultat récupéré paraîtra sous la forme d'un tableau associatif : `$stmt->bindParam(':id', $lessonId, PDO::PARAM_INT)`. 
+`$stmt->bindParam(':id', $lessonId, PDO::PARAM_INT)`. 
 Exécutons maintenant la requête SQL `$stmt->execute()`.
+Le résultat récupéré paraîtra sous la forme d'un tableau associatif : `$lesson = $stmt->fetch(PDO::FETCH_ASSOC)`. 
+
 
 
 
