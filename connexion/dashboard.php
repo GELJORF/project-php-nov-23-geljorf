@@ -14,15 +14,18 @@
         <?php
         session_start();
 
-        if (isset($_SESSION['user_name']) && isset($_GET['type'])) {
-            $user_name = $_SESSION['user_name'];
-            $user_type = $_GET['type'];
+        if (isset($_SESSION['user_name'], $_GET['type'])) {
+            $user_name = htmlspecialchars($_SESSION['user_name']);
+            $user_type = htmlspecialchars($_GET['type']);
+
             echo "<p>Bienvenue, $user_name ! Vous êtes connecté en tant que $user_type.</p>";
 
             if ($user_type === 'professor') {
                 echo "<p>Contenu spécifique au professeur</p>";
-            } else {
+            } else if ($user_type === 'student') {
                 echo "<p>Contenu spécifique à l'élève</p>";
+            } else {
+                echo "<p>Type non valide.</p>";
             }
         } else {
             echo "Session non valide. Veuillez vous connecter.";

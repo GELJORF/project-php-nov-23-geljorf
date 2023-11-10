@@ -1,16 +1,10 @@
 <?php
-// Étape 1 : Formulaire pour entrer l'adresse e-mail
+
 
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
-    $email = $_POST['email']; // Récupérer l'adresse e-mail fournie par l'utilisateur
+    $email = $_POST['email']; 
+    // Code à compléter
 
-    // Vérifier si l'adresse e-mail existe dans la base de données
-    // Si elle existe, générez un jeton de réinitialisation de mot de passe et envoyez un e-mail à l'utilisateur
-    // Le jeton doit être stocké en base de données avec l'adresse e-mail et une date d'expiration
-    // Envoyez un e-mail à l'utilisateur avec un lien vers la page de réinitialisation du mot de passe
-    // Assurez-vous de générer un jeton unique et sécurisé
-
-    // Redirigez l'utilisateur vers une page de confirmation
     header('Location: reset_password_confirmation.php');
 }
 ?>
