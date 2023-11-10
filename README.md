@@ -99,10 +99,10 @@ pour ce site.
 #### Le contenu de la page
 
 Nous avons conçu une première architecture de cette page avec une liste des cours disponibles,
-que nous avons par la suite représentée par une boucle "foreach". Nous incluons le fichier lessons.php qui contient des données sur les leçons afin de générer une liste.
+que nous avons par la suite représentée par une boucle "foreach". Nous incluons le fichier lessons.php qui contient un tableau associatif appelé `$lesson`. Chaque élément de ce tableau représente une leçon avec deux clés : "id" et "title". Chaque leçon est un tableau associatif lui-même contenant l'identifiant de la leçon ("id") et le titre de la leçon ("title").
 
-Le code PHP a été évolué par un script, contenu dans le fichier lesson_content.php. L'on inclut d'abord
-la fonction réutilisable functions.php, qui permet de se connecter à la base de données. 
+Le code PHP évolue dans le fichier lesson_content.php. 
+L'on inclut d'abord la fonction réutilisable functions.php, qui permet de se connecter à la base de données. 
 Nous vérifions ensuite si un paramètre "id" est présent dans l'URL grâce à la fonction grâce au code 
 `if (isset($_GET['id']))`. Si le paramètre est trouvé, cela signifie qu'un identifiant de leçon a été spécifié.
 La valeur `$lessonId` récupère la valeur de l'ID de leçon `$_GET['id']` à partir des paramètres de l'URL.
