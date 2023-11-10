@@ -39,7 +39,7 @@
 
         </main>
         <footer class="mt-6">
-            <p class="text-gray-600">&copy; 2023 Apprendre l'arabe</p>
+            <p class="text-gray-600">&copy; 2023 Arabic</p>
         </footer>
     </div>
 </body>
