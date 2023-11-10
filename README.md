@@ -149,8 +149,26 @@ Clairement, c'était le code le plus difficile à écrire parmi les autres que l
 le réécrire plusieurs fois, en raison de la grande dififuclté (pour nous, débutant en code) à obtenir le code qui calcule correctement les bonnes et mauvaises réponses.
 
 
-Une fois réussi, nous avons donné au fichier le nom de "first_version". Plutôt modeste, proposant simplement
-un tableau associatif et une boucle foreach afin de générer les questions, nous voulons améliorer cette version en réécrivant le code avec des classes. Donc, nous avons introduit les classes "Question" et "Quiz" en vue d'encapsuler le code qui gère les questions et le quiz. 
+Une fois réussi, nous avons donné au fichier le nom de "first_version". Plus adapté à un projet qui ne doit pas évoluer, proposant simplement un tableau associatif et une boucle foreach afin de générer les questions, nous voulions améliorer cette version en réécrivant un code plus structuré, permettant l'addition de nouvelles fonctionnalités dans l'avenir à notre quiz. 
 
 
-Ainsi, et pour que notre code soit "orienté objet", nous avons introduit : 
+C'est pourquoi nous avons opté pour le code "orienté objet", en introduisant les classes "Question" et "Quiz" en vue d'encapsuler le code qui gère les questions et le quiz. 
+Nous avons ajouté : 
+
+
+Les constructeurs de classes, pour initialiser les questions et le score du quiz.
+
+
+Les méthodes de classe, pour calculer et obtenir le score, et obtenir les questions.
+
+
+L'utilisation des constantes de classe (question_1, question_2, etc.) au lieu de chaînes directes pour les clés du tableau protège des coquilles et rend le code plus solide.
+
+
+Et la boucle foreach qui parcourt les questions à l'aide des méthodes de classe getQuestions() et 
+getOptions().
+
+
+Bon Quiz !
+
+
