@@ -115,10 +115,10 @@ Le résultat récupéré paraîtra sous la forme d'un tableau associatif : `$les
 Le reste du code s'occupe d'afficher le contenu ; l'on vérifie si la leçon a bien été trouvée dans 
 la base de données `if ($lesson)` afin de l'afficher en respectant la mise en forme Tailwind CSS.
 
-
-
-
-
-
-
+C'est finalement la page lessonOnLine.php qui s'occupe d'afficher le contenu de la page de leçons du site.
+On inclut d'abord le fichier lessons.php : `require_once "lessons.php"` qui contient le tableau associatif `$lesson` et son contenu ; cette inclusion est nécessaire au bon fonctionnement du code.
+La boucle `foreach ($lesson as $lessonItem)` itère sur chaque élément du tableau $lesson. 
+À chaque itération, les informations de la leçon actuelle sont stockées dans la variable `$lessonItem`.
+Le code va ensuite afficher le contenu de la leçon dans un nouvel onglet, grâce à cette ligne de code : 
+`echo '<a href="lesson_content.php?id=' . $lessonItem["id"] . '" target="_blank" class="text-blue-600 hover:underline">' . $lessonItem["title"] . '</a>'`. Ici, on génère un lien hypertexte `(<a>)` avec l'attribut `href` qui pointe vers la page `"lesson_content.php"` avec un paramètre "id" égal à l'ID de la leçon actuelle.
 
