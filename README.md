@@ -104,8 +104,13 @@ que nous avons par la suite représentée par une boucle "foreach". Nous incluon
 Le code PHP a été évolué par un script, contenu dans le fichier lesson_content.php. L'on inclut d'abord
 la fonction réutilisable functions.php, qui permet de se connecter à la base de données. 
 Nous vérifions ensuite si un paramètre "id" est présent dans l'URL grâce à la fonction grâce au code 
-`if(isset($_GET['id']))`. Si le paramètre est trouvé, cela signifie qu'un identifiant de leçon a été spécifié.
+`if (isset($_GET['id']))`. Si le paramètre est trouvé, cela signifie qu'un identifiant de leçon a été spécifié.
 La valeur `$lessonId` récupère la valeur de l'ID de leçon `$_GET['id']` à partir des paramètres de l'URL.
+Grâce à cette ligne de code `$query = "SELECT title, content, publication_date FROM lessons_learning_arabic WHERE id = :id";` le code prépare une requête SQL pour récupérer le titre, le contenu et la date de publication d'une leçon à partir de la table "lessons_learning_arabic" en utilisant un ID.
+La ligne `$stmt = $pdo->prepare($query)` préapre la requête SQL en utilisant la connexion PDO.
+Il est temps de lier  la valeur de l'ID en tant que paramètre à la requête préparée : 
+`$stmt->bindParam(':id', $lessonId, PDO::PARAM_INT)`. Le résultat récupéré paraîtra sous la forme d'un tableau associatif : `$stmt->bindParam(':id', $lessonId, PDO::PARAM_INT)`. 
+Exécutons maintenant la requête SQL `$stmt->execute()`.
 
 
 
