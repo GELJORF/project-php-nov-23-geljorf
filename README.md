@@ -112,7 +112,8 @@ Il est temps de lier  la valeur de l'ID en tant que paramètre à la requête pr
 `$stmt->bindParam(':id', $lessonId, PDO::PARAM_INT)`. 
 Exécutons maintenant la requête SQL `$stmt->execute()`.
 Le résultat récupéré paraîtra sous la forme d'un tableau associatif : `$lesson = $stmt->fetch(PDO::FETCH_ASSOC)`. 
-
+Le reste du code s'occupe d'afficher le contenu ; l'on vérifie si la leçon a bien été trouvée dans 
+la base de données `if ($lesson)` afin de l'afficher en respectant la mise en forme Tailwind CSS.
 
 
 
