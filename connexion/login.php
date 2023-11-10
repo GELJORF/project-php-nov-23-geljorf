@@ -1,7 +1,6 @@
 <?php
-
-// Ce code ne fonctionn pas encore correctement
 session_start();
+
 
 function connectToDatabase() {
     if ($_SERVER["REQUEST_METHOD"] === "POST") {
@@ -19,28 +18,39 @@ function connectToDatabase() {
         $email = $_POST['email'];
         $password = $_POST['password'];
 
-        $sql = 'INSERT INTO connected (email) VALUES (:email)';
-        $stmt = $pdo->prepare($sql);
-        $stmt->bindValue(':email', $email);
-        $stmt->execute();
-
-
-        $sql = 'SELECT * FROM connected WHERE email = :email';
-        $stmt = $pdo->prepare($sql);
-        $stmt->bindValue(':email', $email);
-        $stmt->execute();
-        $user = $stmt->fetch();
+        $sqlSelect = 'SELECT * FROM connected WHERE email = :email';
+        $stmtSelect = $pdo->prepare($sqlSelect);
+        $stmtSelect->bindValue(':email', $email);
+        $stmtSelect->execute();
+        $user = $stmtSelect->fetch();
 
         if ($user && password_verify($password, $user['password'])) {
+            file_put_contents('connected.txt', $email . PHP_EOL, FILE_APPEND);
+
+        if (!$user) {
+                $sqlInsert = 'INSERT INTO connected (name, email, password) VALUES (:name, :email, :password)';
+                $stmtInsert = $pdo->prepare($sqlInsert);
+                $stmtInsert->bindValue(':name', 'VotreNom');
+                $stmtInsert->bindValue(':email', $email);
+                $stmtInsert->bindValue(':password', $password);
+                $stmtInsert->execute();
+            }
+            
             $_SESSION['user_id'] = $user['ID'];
             $_SESSION['user_name'] = $user['name'];
             $_SESSION['user_email'] = $user['email'];
 
+            
+            $fileContent = file_get_contents('connected.txt');
+            file_put_contents('connected.txt', $fileContent . $email . PHP_EOL);
+
+            
             if ($user['user_type'] === 'professor') {
                 header('Location: dashboard.php?type=professor');
             } else {
                 header('Location: dashboard.php?type=student');
             }
+            exit();
         } else {
             echo 'Identifiants de connexion non valides.';
         }
