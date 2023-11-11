@@ -145,8 +145,7 @@ Nous avons décidé d'aller plus loin dans le code, en ajoutant à la page de le
 les connaissances, certes récentes et bien fraîches, avouons-le, des nouveaux apprenants en arabe.
 
 
-Clairement, c'était le code le plus difficile à écrire parmi les autres que le site propose. Il a fallu 
-le réécrire plusieurs fois, en raison de la grande dififuclté (pour nous, débutant en code) à obtenir le code qui calcule correctement les bonnes et mauvaises réponses.
+Clairement, le code du quiz n'était pas facile à écrire. Il a fallu le réécrire plusieurs fois, en raison de la grande dififuclté (pour nous, débutant en code) à obtenir le code qui calcule correctement les bonnes et mauvaises réponses.
 
 
 Une fois réussi, nous avons donné au fichier le nom de "first_version". Plus adapté à un projet qui ne doit pas évoluer, proposant simplement un tableau associatif et une boucle foreach afin de générer les questions, nous voulions améliorer cette version en réécrivant un code plus structuré, permettant l'addition de nouvelles fonctionnalités dans l'avenir à notre quiz. 
