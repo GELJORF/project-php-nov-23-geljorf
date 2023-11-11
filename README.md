@@ -171,3 +171,20 @@ getOptions().
 Bon Quiz !
 
 
+### Pages inscription et connexion
+
+
+Le responsable du site pourra avoir accès aux données des nouveaux inscrits, soit
+en consultant le fichier texte `new_subscribers.txt`, soit en accédant à la base de données 
+hb_pdo_pe7 et sa table "subscribers" dans laquelle les données sont stockées dès que l'utilisateur
+clique sur "Inscription".
+
+Quant à la page "Connexion", nous n'avons malheureusement pas réussi à développer un script qui permet une connexion par type comme nous l'avions prévu au départ. Par connexion par type, nous entendons la session de l'élève qui permet à ce dernier d'accéder à son espace personnel, et celle de l'enseignant qui lui permet
+d'accéder à un tableau de bord afin dé gérer le contenu des leçons proposées par le site.
+Nous nous sommes ainsi contenté d'une connexion unique, celle de l'élève, pour que ce dernier puisse accéder
+à son espace personnel `dashboard_student.php`. 
+
+
+Alors que le script d'inscription a réussi, celle qui gère la connexion n'est pas encore un succès.
+Une page vide s'affiche lorsque l'on clique sur "se connecter". Nous n'avons pas encore réussi à en déterminer la raison.
+
