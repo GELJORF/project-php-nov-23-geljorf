@@ -15,12 +15,8 @@
             <div class="mb-4">
                 <label class="block text-gray-700 mb-2">Type de connexion :</label>
                 <div class="mb-2 flex justify-center">
-                    <label class="inline-flex items-center mr-4">
-                        <input type="radio" name="user_type" value="professor" class="text-blue-600 mr-2">
-                        <span>Professeur</span>
-                    </label>
                     <label class="inline-flex items-center">
-                        <input type="radio" name="user_type" value="student" class="text-blue-600 mr-2">
+                        <input type="radio" name="user_type" value="student" class="text-blue-600 mr-2" checked>
                         <span>Élève</span>
                     </label>
                 </div>

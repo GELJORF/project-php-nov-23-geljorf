@@ -30,7 +30,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     $hashed_password = password_hash($password, PASSWORD_BCRYPT);
 
-    // Enregistrement des données dans la base de données
+  
     try {
         $sql = "INSERT INTO subscribers (first_name, last_name, email, password, active) VALUES (?, ?, ?, ?, 1)";
         $stmt = $pdo->prepare($sql);
@@ -41,7 +41,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         echo "Erreur lors de l'inscription dans la base de données : " . $e->getMessage();
     }
 
-    // Enregistrement des données dans le fichier texte
+   
     $insertedData = "Nom: $last_name, Prénom: $first_name, Email: $email, Téléphone: $telephone, Niveau: $level";
     $file = fopen("new_subscribers.txt", "a");
     if ($file) {
@@ -53,6 +53,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 }
 
-// Fermer la connexion à la base de données
+
 $pdo = null;
 ?>
