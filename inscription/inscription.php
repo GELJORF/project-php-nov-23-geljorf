@@ -12,8 +12,12 @@
     <h1 class="text-4xl font-bold text-blue-600 mb-4 mt-8">Inscription</h1>
     <form class="bg-white p-8 rounded-lg shadow-md w-full max-w-md" action="index.php" method="POST" enctype="multipart/form-data">
         <div class="mb-4">
-            <label class="text-gray-700 text-sm" for="name">Nom de l'utilisateur :</label>
-            <input class="border border-blue-300 rounded p-2 w-full" type="text" id="name" name="name" required>
+            <label class="text-gray-700 text-sm" for="first_name">Prénom :</label>
+            <input class="border border-blue-300 rounded p-2 w-full" type="text" id="first_name" name="first_name" required>
+        </div>
+        <div class="mb-4">
+            <label class="text-gray-700 text-sm" for="last_name">Nom :</label>
+            <input class="border border-blue-300 rounded p-2 w-full" type="text" id="last_name" name="last_name" required>
         </div>
         <div class="mb-4">
             <label class="text-gray-700 text-sm" for="email">Email :</label>
@@ -46,13 +50,7 @@
                 <option value="intermediate">Intermédiaire</option>
                 <option value="advanced">Avancé</option>
             </select>
-        </div>
-        <div class="mb-4">
-            <label class="text-gray-700 text-sm" for="user_type">Type d'utilisateur :</label>
-            <select class="border border-blue-300 rounded p-2 w-full" id="user_type" name="user_type">
-                <option value="student">Élève</option>
-                <option value="professor">Professeur</option>
-            </select>
+
         </div>
         <button class="bg-blue-600 text-white p-2 rounded hover:bg-blue-700 w-full" type="submit">Inscription</button>
     </form>
