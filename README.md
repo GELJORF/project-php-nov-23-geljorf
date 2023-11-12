@@ -188,3 +188,9 @@ Nous nous sommes ainsi contenté d'une connexion unique, celle de l'élève, pou
 Alors que le script d'inscription a réussi, celle qui gère la connexion n'est pas encore un succès.
 Une page vide s'affiche lorsque l'on clique sur "se connecter". Nous n'avons pas encore réussi à en déterminer la raison.
 
+
+La page de connexion propose également la possibilité de réinitialiser son mot de passe. Bien que nous ayons conçu le squellette de cette opération, nous n'avons pas malheureusement réussi à compléter le code que nous avons entamé. 
+Nous l'avons dit et nous le réitérons, ce site est en cours de développement. Nous reviendrons donc sur cet aspect important de la connexion, à savoir réinitialiser un mot de passe lorsque celui-ci est oublié. Nous ajoutons donc cette tâche à la liste, conséquente, ToDo.
+
+
+
