@@ -10,7 +10,7 @@
     <h1 class="text-4xl font-bold text-blue-600 mb-4">Licence</h1>
 
     <p class="text-gray-700 mb-4">
-        Le contenu de ce site web est protégé par les lois sur les droits d'auteur et est la propriété de [Votre Nom d'Entreprise] (ci-après dénommé "le Titulaire"). Tous les droits non expressément accordés dans le cadre de cette licence sont réservés au Titulaire.
+        Le contenu de ce site web est protégé par les lois sur les droits d'auteur et est la propriété de ALE (ci-après dénommé "le Titulaire"). Tous les droits non expressément accordés dans le cadre de cette licence sont réservés au Titulaire.
     </p>
 
     <h2 class="text-2xl font-semibold text-blue-600 mb-2">Utilisation du Contenu</h2>
@@ -38,7 +38,7 @@
     </p>
 
     <p class="text-gray-700 mb-4">
-        Si vous avez des questions concernant cette licence, veuillez nous contacter à [adresse e-mail de contact].
+        Si vous avez des questions concernant cette licence, veuillez nous contacter à ale@ggmail.com.
     </p>
 
     <p class="text-gray-700 mb-4">
