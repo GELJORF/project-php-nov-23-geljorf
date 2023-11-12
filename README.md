@@ -145,7 +145,7 @@ Nous avons décidé d'aller plus loin dans le code, en ajoutant à la page de le
 les connaissances, certes récentes et bien fraîches, avouons-le, des nouveaux apprenants en arabe.
 
 
-Clairement, le code du quiz n'était pas facile à écrire. Il a fallu le réécrire plusieurs fois, en raison de la grande dififuclté (pour nous, débutant en code) à obtenir le code qui calcule correctement les bonnes et mauvaises réponses.
+Clairement, le code du quiz n'était pas facile à écrire. Il a fallu le réécrire plusieurs fois, en raison de la grande difficulté (pour nous, débutant en code) à obtenir le code qui calcule correctement les bonnes et mauvaises réponses.
 
 
 Une fois réussi, nous avons donné au fichier le nom de "first_version". Plus adapté à un projet qui ne doit pas évoluer, proposant simplement un tableau associatif et une boucle foreach afin de générer les questions, nous voulions améliorer cette version en réécrivant un code plus structuré, permettant l'addition de nouvelles fonctionnalités dans l'avenir à notre quiz. 
@@ -180,7 +180,7 @@ hb_pdo_pe7 et sa table "subscribers" dans laquelle les données sont stockées d
 clique sur "Inscription".
 
 Quant à la page "Connexion", nous n'avons malheureusement pas réussi à développer un script qui permet une connexion par type comme nous l'avions prévu au départ. Par connexion par type, nous entendons la session de l'élève qui permet à ce dernier d'accéder à son espace personnel, et celle de l'enseignant qui lui permet
-d'accéder à un tableau de bord afin dé gérer le contenu des leçons proposées par le site.
+d'accéder à un tableau de bord afin de gérer le contenu des leçons proposées par le site.
 Nous nous sommes ainsi contenté d'une connexion unique, celle de l'élève, pour que ce dernier puisse accéder
 à son espace personnel `dashboard_student.php`. 
 
@@ -189,7 +189,7 @@ Alors que le script d'inscription a réussi, celle qui gère la connexion n'est 
 Une page vide s'affiche lorsque l'on clique sur "se connecter". Nous n'avons pas encore réussi à en déterminer la raison.
 
 
-La page de connexion propose également la possibilité de réinitialiser son mot de passe. Bien que nous ayons conçu le squellette de cette opération, nous n'avons pas malheureusement réussi à compléter le code que nous avons entamé. 
+La page de connexion propose également la possibilité de réinitialiser son mot de passe. Bien que nous ayons conçu le squelette de cette opération, nous n'avons pas malheureusement réussi à compléter le code que nous avons entamé. 
 Nous l'avons dit et nous le réitérons, ce site est en cours de développement. Nous reviendrons donc sur cet aspect important de la connexion, à savoir réinitialiser un mot de passe lorsque celui-ci est oublié. Nous ajoutons donc cette tâche à la liste, conséquente, ToDo.
 
 
