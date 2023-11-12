@@ -193,4 +193,5 @@ La page de connexion propose également la possibilité de réinitialiser son mo
 Nous l'avons dit et nous le réitérons, ce site est en cours de développement. Nous reviendrons donc sur cet aspect important de la connexion, à savoir réinitialiser un mot de passe lorsque celui-ci est oublié. Nous ajoutons donc cette tâche à la liste, conséquente, ToDo.
 
 
-
+Un des développements, indispensables, à ajouter à notre site est l'inclusion de fichiers audio dans la partie consacrée aux leçons. Alors que ce chapitre ne comprend, actuellement, que la translittération des mots, nous tablons sur l'enregistrement (notre voix, et un registre standard d'arabe dénué de tout accent) de la manière dont ces mots arabes sont prononcés. Ces fichiers audio seront d'une extrême utilité des
+nouveaux apprenants.
