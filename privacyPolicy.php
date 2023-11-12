@@ -60,7 +60,7 @@
     </p>
 
     <p class="text-gray-700 mb-4">
-        Si vous avez des questions concernant notre politique de confidentialité, veuillez nous contacter à [adresse e-mail de contact].
+        Si vous avez des questions concernant notre politique de confidentialité, veuillez nous contacter à (ale@ggmail.com).
     </p>
 
     <p class="text-gray-700 mb-4">
