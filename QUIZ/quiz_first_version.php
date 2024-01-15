@@ -1,5 +1,5 @@
 <!-- Voici la première version du code du quiz, avant
-de réorganiser le code à l'aide de constances de classe -->
+de réorganiser le code à l'aide de constantes de classe -->
 
 <?php
 $questions = [

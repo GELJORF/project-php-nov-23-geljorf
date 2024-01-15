@@ -1,13 +1,10 @@
 <?php
-
+include 'config.php';
 function connectToDatabase() {
     if ($_SERVER["REQUEST_METHOD"] === "POST") {
         try {
-            $pdo = new PDO(
-                $dsn = "mysql:host=host.docker.internal;port=3306;dbname=hb_pdo_pe7;charset=utf8mb4",
-                $username = 'hb_pdo_pe7',
-                $password = 'TUEjdMVP1onaGMQF',
-            );
+            $pdo = new PDO(DB_DSN, DB_USERNAME, DB_PASSWORD);
+
             $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         } catch (PDOException $e) {
             exit("Erreur de connexion à la base de données : " . $e->getMessage());
@@ -48,4 +45,4 @@ function connectToDatabase() {
         echo 'Accès non autorisé.';
     }
 }
-?>
+

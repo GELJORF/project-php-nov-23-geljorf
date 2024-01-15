@@ -1,12 +1,11 @@
 <?php
 
-function connectToDatabase() {
+include 'config.php';
+function connectToDatabase()
+{
     try {
-        $pdo = new PDO(
-            $dsn = "mysql:host=host.docker.internal;port=3306;dbname=hb_pdo_pe7;charset=utf8mb4",
-            $username = 'hb_pdo_pe7',
-            $password = 'TUEjdMVP1onaGMQF',
-        );
+        $pdo = new PDO(DB_DSN, DB_USERNAME, DB_PASSWORD);
+
         $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
         return $pdo;
@@ -30,7 +29,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     $hashed_password = password_hash($password, PASSWORD_BCRYPT);
 
-  
+
     try {
         $sql = "INSERT INTO subscribers (first_name, last_name, email, password, active) VALUES (?, ?, ?, ?, 1)";
         $stmt = $pdo->prepare($sql);
@@ -41,7 +40,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         echo "Erreur lors de l'inscription dans la base de données : " . $e->getMessage();
     }
 
-   
+
     $insertedData = "Nom: $last_name, Prénom: $first_name, Email: $email, Téléphone: $telephone, Niveau: $level";
     $file = fopen("new_subscribers.txt", "a");
     if ($file) {
@@ -55,4 +54,3 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 
 $pdo = null;
-?>
