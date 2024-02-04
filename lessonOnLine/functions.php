@@ -1,9 +1,9 @@
 <?php
-include_once 'config.php'; 
+include_once 'config.php';
 function connectToDatabase()
             {           
                 try {
-                    $pdo = new PDO(DB_DSN, DB_USERNAME, DB_PASSWORD, );
+                    $pdo = new PDO(DB_DSN, DB_USERNAME, DB_PASSWORD);
             
                     return $pdo;
                 } catch (PDOException $e) {
