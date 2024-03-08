@@ -7,7 +7,7 @@
     <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
 </head>
 <body class="bg-gray-100 p-8">
-   
+    
     <div class="max-w-3xl mx-auto">
         <header>
             <h1 class="text-4xl font-bold text-blue-600 mb-6">Contactez-nous</h1>
